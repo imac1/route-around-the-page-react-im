@@ -1,5 +1,8 @@
-
+import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+import AboutUs from './AboutUs';
+
 
 
 const Layout = ({children}) => {
@@ -7,12 +10,9 @@ const Layout = ({children}) => {
         <div >
        
             <Header></Header>
-            <main>{children}</main>
-         
-           
-     
+            <main>{children || <AboutUs/>}</main>
+            <Footer></Footer>
 
-   
         </div>
     )
 
